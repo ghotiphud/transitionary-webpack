@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Transitionary Webpack</title>
+    <script src="dist/head.js"></script>
+  </head>
+  <body>
+    <script>
+      jQuery(function(){
+        console.log("jQuery global");
+      });
+
+      $(function() {
+        console.log("$ global");
+      });
+    </script>
+
+    <script src="dist/common.js"></script>
+    <script src="dist/desktop_common.js"></script>
+    <script src="dist/index.js"></script>
+  </body>
+</html>
